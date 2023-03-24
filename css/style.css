@@ -1,0 +1,1337 @@
+/*.......global css start........*/
+html{
+	scroll-behavior: smooth;
+}
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	max-width: 1150px;
+	margin: 0 auto;
+}
+img,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p,
+span,
+ul {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+.color-blue{
+	color: #38bfcb;
+}
+.blue-bg{
+	background-color: #5ebed6;
+}
+.dark-blue-bg{
+	background-color: #06647c;
+}
+.yellow-bg{
+	background-color: #ffbf37;
+}
+h1{
+	font-size: 28px;
+	font-family: 'OpenSans-BoldItalic';
+	color: #06647c;
+	line-height: 1.2;
+}
+h2{
+	font-size: 58px;
+	font-family: 'OpenSans-SemiBold';
+	line-height: 1.2;
+}
+h3{
+	font-size: 22px;
+	font-family: 'OpenSans-SemiBold';
+	line-height: 1.2;
+}
+h4{
+	font-size: 30px;
+	font-family: 'OpenSans-SemiBold';
+	
+	line-height: 1.2;
+}
+
+/*......global css end.....*/
+
+@media ( min-width: 320px ){
+	.nav-buttom-wraper ul{
+		display: none ;
+	}
+	.mobile-none {
+		display: block;
+	}
+	.logo-wrape{
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		margin: 0px 15px 15px;
+	}
+	.hamburger {
+		top: 15px;
+		right: 5px;	
+		width: 33px;
+		height: 3px;
+		background: #38bfcb;
+		position: absolute;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+		transition: 0.5s;
+	}
+	
+	.hamburger:before {
+		top: -8px;
+	}
+	
+	.hamburger:after {
+		top: 8px;
+	}
+	
+	.hamburger-one:before,
+	.hamburger-one:after {
+		content: '';
+		position: absolute;
+		width: 33px;
+		height: 3px;
+		background: #5ebed6;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+		transition: 0.5s;
+	}
+	.icon-one.active-one .hamburger-one {
+		background: rgba(0, 0, 0, 0);
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+	}
+
+	.icon-one.active-one .hamburger-one:before {
+		top: 0;
+		transform: translate(0, 0px) rotate(45deg);
+	}
+
+	.icon-one.active-one .hamburger-one:after {
+		top: 0;
+		transform: translate(0, 0px) rotate(-45deg);
+	}
+
+.header-top{
+	background-color: #5ebed6;
+	padding: 15px;
+}
+.header-top .container{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 20px;
+}
+.contact-no{
+	display: flex;
+    gap: 10px;
+    flex-direction: column;
+	
+}
+.contact-no a i{
+	 margin-right: 10px;
+	 transition: 1s ease all;
+	
+}
+.contact-no a i:hover{
+	color: #06647c;
+}
+.contact-no a{
+	font-size: 14px;
+	color: #fff;
+	font-family: 'OpenSans-Regular';
+	transition: 1s ease all;
+	
+}
+.soical-links{
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+
+}
+.soical-links a{
+	color: #fff;
+	transition: 0.5s ease all;
+}
+.soical-links a i{
+	font-size: 20px;
+}
+.soical-links a:hover{
+	color: #06647c;
+}
+.header-buttom .container{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.header-buttom{
+	padding: 25px 0px;
+	background-color: #fff;
+}
+nav{
+	background-color: #5ebed6;
+}
+nav ul{
+	display: flex;
+	gap: 10px;
+	flex-direction: row;
+	/* display: none ; */
+	/* position: absolute;
+	z-index: 3423; */
+	
+}
+nav ul a{
+	display: flex;
+    padding: 12px 0px;
+    color: #272727;
+	margin: 0px 0px 20px;
+    justify-content: center;
+    font-size: 16px;
+    transition: 0.5s ease all;
+    font-family: 'MyriadPro-Regular';
+}
+nav ul a:hover{
+    background-color: #06647c;
+	color: #fff;
+}
+/*..... banner.... */
+.banner{
+	background-image: url('../images/task-rabbitbg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20px 0px 20px;
+
+}
+.slider-wrapper{
+	display: flex;
+	justify-content: center;
+}
+.banner-inner{
+width: 250px;
+position: unset;
+}
+.banner-text{
+	margin-left: 10px;
+    margin-right: 10px;
+}
+.banner-text span{
+	margin-bottom: 10px;
+    font-family: 'MyriadPro-Regular';
+    font-size: 33px;
+    display: inline-block;
+	color: #272727;
+	
+}
+.banner h1{
+	margin-bottom: 15px;
+}
+.banner p{
+	font-size: 16px;
+	font-family: 'OpenSans-BoldItalic';
+	margin-bottom: 10px;
+}
+.banner a{
+	font-size: 16px;
+    color: #fff;
+    width: 150px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 10px 0px 10px;
+    background-color: #38bfcb;
+    font-family: 'OpenSans-SemiBold';
+    transition: 0.5s ease all;
+	margin: auto;
+}
+.banner a:hover{
+	background-color: #fff;
+	color:  #06647c;
+}
+
+.slider-wrapper .banner-inner button{
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: #fff;
+	outline: none;
+	transition: 0.5s ease all;
+}
+.slider-wrapper .banner-inner button:hover{
+	background-color: #38bfcb;
+	border: none;
+}
+.slider-wrapper .banner-inner .BannerbtnNext {
+	right: 10px;
+	top: 40%;
+	position: absolute;
+}
+.slider-wrapper .banner-inner .BannerbtnPrev {
+	position: absolute;
+	left: 10px;
+	top: 40%;
+}
+
+/*..... about-taskRabbit...... */
+
+.about-taskRabbit{
+	padding: 25px 20px 25px;
+}
+.about-taskRabbit .container{
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.rabbit-description h4{
+	margin-bottom: 10px;
+}
+.rabbit-description{
+	max-width: 480px;
+	width: 100%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.rabbit-description p{
+	font-size: 14px;
+    font-family: 'MyriadPro-Regular';
+    margin-bottom: 12px;
+    line-height: 25px;
+}
+.rabbit-description a{
+	/* width: 126px; */
+	padding: 8px 0px 8px;
+	background-color: #38bfcb;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'OpenSans-SemiBold';
+	border-radius: 2px;
+	transition: 0.5s ease all;
+	border:  0.1px solid transparent;
+
+}
+.rabbit-description a:hover {
+	border: 0.1px solid #272727;
+	background-color: #fff;
+	color: #06647c; 
+}
+.card-wrape{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.card-wrape .card{
+	display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.card-wrape .card img{
+	max-width: 100%;
+}
+.card-wrape .card span{
+	font-size: 20px;
+    font-family: 'OpenSans-SemiBold';
+    margin: 15px 0px 15px;
+    display: inline-block;
+}
+.card-wrape .card p{
+	font-size: 16px;
+    font-family: 'MyriadPro-Regular';
+    width: 266px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.card-wrape .card a{
+	display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 137px;
+    color: #fff;
+    background-color: #38bfcb;
+    font-size: 16px;
+    font-family: 'MyriadPro-Regular';
+    padding: 10px 0px 10px;
+    border-radius: 2px;
+    border: 0.1px solid transparent;
+    transition: 0.5s ease all;
+
+}
+.card-wrape :last-child.card a{
+	background-color: #06647c;
+}
+.card-wrape .card a:hover {
+    background-color: #fff;
+    color: #06647c;
+	border: 0.1px solid #272727;
+}
+ /* ......task-doing ........ */
+
+ .task-doing{
+	background-image: url('../images/task-doing-bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20px 20px 20px;
+	position: relative;
+ }
+ .task-doing::after
+{
+	content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+	background-color: #86d8e4;
+    opacity: 0.3;
+ }
+ .task-doing h3{
+	margin-bottom: 20px;
+	text-align: center;
+}
+.card-outer{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	gap: 30px;
+	max-width: 1140px;
+	margin-inline: auto;
+}
+.card-outer .card{
+	width: 100%;
+	max-width: 360px;
+	z-index: 9999;
+	background-color: #fff;
+}
+.card-outer .card img{
+	width: 100%;
+}
+.card-outer .card span{
+	font-family: 'OpenSans-Regular';
+	font-size: 18px;
+	margin-bottom: 10px;
+	display: block;
+
+}
+.card-outer .card a{
+	font-size: 13px;
+	font-family: 'OpenSans-BoldItalic';
+	color: #06647c;
+}
+.spane-wrape{
+	padding: 15px;
+}
+/* ......task-flow...... */
+
+.task-flow{
+	padding: 50px 0px 60px;
+}
+.task-flow h3{
+ text-align: center;
+ margin-bottom: 25px;
+}
+.how-works{
+	display: flex;
+    max-width: 1010px;
+    margin: auto;
+    justify-content: space-between;
+	flex-direction: column;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #272727;
+}
+.work-card{
+		width: 100%;
+		max-width: 260px;
+		margin: auto;
+		margin-bottom: 20px;
+		text-align: center;
+		position: relative;	
+}
+.work-card a{
+	margin-bottom: 10px;
+	display: block;
+}
+.work-card span{
+	display: block;
+	font-family: 'OpenSans-SemiBold';
+	font-size: 20px;
+    margin-bottom: 10px;
+
+}
+.work-card p{
+	font-size: 14px;
+	line-height: 1.5;
+	font-family: 'OpenSans-Regular';
+}
+.work-card i{
+	font-size: 25px;
+	position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.yourn-need-wrapper{
+	padding: 0px 20px;
+}
+.your-need{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	width: 100%;
+	gap: 20px;
+	max-width: 1140px;
+	flex-direction: column;
+	margin-inline: auto;
+	
+}
+.need-card {
+	width: 100%;
+	max-width: 360px;
+	margin: auto;
+	padding: 50px 10px 50px;
+}
+.need-card img{
+	margin-bottom: 20px;
+}
+.need-card span{
+	display: block;
+	font-family: 'OpenSans-SemiBold';
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+.need-card p{
+	font-size: 14px;
+	font-family: 'MyriadPro-Regular';
+	color: #fff;
+	line-height: 1.5;
+}
+/*........ tasker...... */
+
+.tasker{
+	background-image: url('../images/tools-bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 25px 20px 25px;
+}
+.tasker::after
+{
+	content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+	background-color: #6aa2b0;
+    opacity: 0.8;
+ }
+.tasker-wrapper{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.tasker-detile{
+	z-index: 99999;
+	width: 100%;
+	max-width: 750px;
+}
+.tasker-detile h2{
+	color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.tasker-detile p{
+	font-size: 16px;
+	color: #fff;
+	font-family: 'OpenSans-Regular';
+	margin-bottom: 15px;
+}
+.tasker-register{
+	z-index: 9999;
+}
+.tasker-register a{
+	background-color: #ffbf37;
+    border-radius: 3.5px;
+    font-size: 16px;
+    padding: 8px 39px 9px;
+    color: #fff;
+    font-family: 'OpenSans-SemiBold';
+    transition: 0.5s ease all;
+	
+}
+.tasker-register a:hover{
+	background-color: #fff;
+	color: black;
+
+}
+/*...... customers-saying ......*/
+
+.customers-saying{
+	padding: 30px 20px 30px;
+	text-align: center;
+	position: relative;
+}
+.customers-saying h3{
+	line-height: 2;
+	margin-bottom: 30px;
+}
+.brands-logos{
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+.slider-item{
+	justify-content: center;
+    align-items: center;
+	margin: 0px 20px 0px;
+    flex-direction: column;
+
+}
+.client-feedback{
+	text-align: center;
+}
+.client-feedback p{
+	font-size: 16px;
+    font-family: 'OpenSans-Regular';
+    margin-bottom: 20px;
+	text-align: center;
+}
+.client-feedback span{
+	 font-size: 20px;
+	 font-family: 'OpenSans-SemiBold';
+	 display: block;
+	 margin-bottom: 15px;
+}
+.client-feedback a{
+	 font-size: 23px;
+	 font-family: 'OpenSans-Regular';
+	 color: #272727;
+}
+.client-slider .slick-slide {
+	display: inline-flex;
+    justify-content: space-around;
+
+}
+.client-slider button{
+	width: 30px;
+	height: 30px;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border-radius: 50%;
+	cursor: pointer;
+	color: rgb(184, 180, 180);
+	font-size: 15px;
+	transition: 0.5s ease all;
+}
+ .client-slider  button:hover{
+	background-color: #a6a6a6;
+	color: #fff;
+	border: none;
+	position: absolute;
+}
+
+.client-slider .client-btnNext{
+	right: 10px;
+	top: 60%;
+	position: absolute;
+}
+.client-slider .client-btnPrev{
+	position: absolute;
+	left: 10px;
+	top: 60%;
+}
+.client-slider.slick-slider{
+	position: unset;
+}
+/* ......footer..... */
+footer{
+	background-color: #1d1d1d;
+	padding: 55px 0px 42px;
+}
+.footer-inner{
+	padding: 25px 0px 24px;
+	background-color: #252525;
+	margin: 0px 20px 0px;
+	position: relative;
+}
+.footer-links ul{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+	flex-direction: column;
+}
+.about-link ul li a{
+	color: #fff;
+	font-size: 16px;
+	font-family: 'OpenSans-SemiBold';
+	transition: 0.5s ease all;
+
+}
+.about-link ul li a:hover{
+	color: #a6a6a6;
+
+}
+.copy-right ul li{
+	/* margin-right: 20px; */
+}
+.copy-right ul li a{
+	color: #a6a6a6;
+	font-family: 'MyriadPro-Regular';
+	transition: 0.5s ease all;
+}
+.copy-right ul li a:hover{
+	color: #fff;
+}
+.footer-wrapper{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	text-align: center;
+	justify-content: space-between;
+	
+}
+
+.links-wrapper .soical-links{
+	margin-bottom: 15px;
+}
+.links-wrapper .soical-links i{
+	color: #a6a6a6;
+	font-size: 20px;
+	transition: 0.5s ease all;
+}
+.links-wrapper .soical-links i:hover{
+	color: #fff;
+}
+.scroll-section{
+	position: absolute;
+    top: 45px;
+    right: 10px;
+	gap: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.scroll-btn a{
+	height: 40px;
+    width: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+	color: #272727;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s ease all;
+}
+.scroll-btn a:hover{
+	background-color: #a6a6a6;
+	color: #1d1d1d;
+}
+.empty-div{
+	
+	height: 60px;
+    width: 60px;
+	background-color: #1d1d1d;
+}
+.supportlinks a{
+	color: #fff;
+	font-size: 16px;
+	font-family: 'OpenSans-SemiBold';
+	text-align: center;
+	display: block;
+	transition: 0.5s ease all;
+}
+.supportlinks a:hover{
+	color: #a6a6a6;
+}
+
+}
+@media (min-width: 481px){
+	.container{
+		max-width: 870px;
+	}
+	.header-top .container {
+		flex-direction: row;
+		align-items: center;
+	}
+	.contact-no{
+		flex-direction: column;
+		margin-bottom: 0px;
+	}
+	.hamburger{
+		width: 40px;
+	}
+	.hamburger-one:before, .hamburger-one:after{
+		width: 40px;
+	}
+	.hamburger:before {
+		top: -10px;
+	}
+	.hamburger:after {
+		top: 10px;
+	}
+	.logo-wrape {
+		margin: 0px 20px 20px;
+	}
+	.slider-wrapper{
+		justify-content: flex-end;
+	}
+	.banner{
+		padding: 35px 0px 35px;
+	}
+	.banner h1{
+		font-size: 35px;
+	}
+	.banner-text span{
+		font-size: 38px;
+	}
+	.banner-inner{
+		width: 330px;
+	}
+	.banner p {
+		font-size: 18px;
+	}
+	.banner a{
+		font-size: 20px;
+		padding: 12px 0px 12px;
+		width: 180px;
+		margin: unset;
+	}
+	.slider-wrapper .banner-inner .BannerbtnNext {
+		right: 10px;
+		top: 40%;
+		position: absolute;
+	}
+	.slider-wrapper .banner-inner .BannerbtnPrev {
+		position: absolute;
+		left: 10px;
+		top: 40%;
+	}
+	.card-wrape .card p{
+		font-size: 18px;
+    	max-width: 302px;
+	}
+	.rabbit-description a {
+		width: 138px;
+		padding: 10px 0px 10px;
+	}
+	.rabbit-description {
+		max-width: 573px;
+	}
+	.rabbit-description p {
+		font-size: 16px;
+		text-align: left;
+	}
+	.rabbit-description h4 {
+		text-align: left;
+	}
+	.about-taskRabbit {
+		padding: 45px 20px 45px;
+	}
+	.card-wrape {
+		
+		flex-direction: row;
+		gap: 20px;
+	}
+	.card-outer{
+		max-width: 480px;
+	}
+	.card-outer .card{
+		max-width: 480px
+	}
+	.task-doing{
+		padding: 40px;
+	}
+	.task-doing h3 {
+		font-size: 35px;
+		margin-bottom: 41px;
+	}
+	.need-card {
+		max-width: 440px;
+	}
+	.tasker {
+		padding: 40px 25px 40px;
+	}
+	.tasker-detile h2{
+		font-size: 40px;
+	}
+	.tasker-detile p {
+		font-size: 20px;
+		margin-bottom: 25px;
+	}
+	.client-feedback p{
+		max-width: 580px
+	
+	}
+	.slider-item{
+		margin: 0px 30px 0px;
+	}
+	.footer-links{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.scroll-section {
+		top: 70px;
+	}
+}
+
+
+@media ( min-width: 768px ) {
+	.nav-buttom-wraper ul{
+		display: flex ;
+		align-items: center;
+	}
+	.nav-buttom-wraper ul li{
+		display: flex;
+		flex-direction: row;
+	}
+	.nav-buttom-wraper{
+		display: block !important;
+	}
+	.hamburger{
+		display: none;
+	}
+	.container{
+			max-width: 915px;
+		
+	}
+	.header-top .container{
+		flex-direction: row;
+	}
+	.contact-no {
+		
+		gap: 20px;
+		flex-direction: row;
+	}
+	.header-buttom .container{
+		flex-direction: row;
+		align-items: center;
+	}
+	.logo-wrape{
+		margin-bottom: 0px;
+	}
+	nav{
+		background-color: #fff;
+	}
+	
+	nav ul a {
+		padding: 10px 10px;
+		margin: 0px 0px 0px; 
+	}
+	nav ul a:hover {
+		background-color: #5ebed6;
+	}
+	.logo img{
+		width: 100%;
+	}
+	.soical-links {
+		gap: 20px;
+	}
+	.header-buttom {
+		padding: 20px 0px;
+	}
+	.banner{
+		padding: 50px 0px 50px;
+	}
+	.banner-inner {
+		width: 430px;
+	}
+	.banner h1{
+		line-height: 1.6;
+		margin-bottom: 20px
+	}
+	.banner p {
+		line-height: 1.8;
+		font-size: 22px;
+	}
+	.slider-wrapper .banner-inner .BannerbtnNext {
+		right: 10px;
+		top: 38%;
+		position: absolute;
+	}
+	.slider-wrapper .banner-inner .BannerbtnPrev {
+		position: absolute;
+		left: 10px;
+		top: 38%;
+	}
+	.card-wrape{
+		flex-direction: row;
+	}
+	.rabbit-description{
+		max-width: 629px;
+	}
+	.rabbit-description p{
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.rabbit-description h4 {
+		margin-bottom: 23px;
+		font-size: 35px;
+	}
+	.rabbit-description a {
+		width: 160px;
+		padding: 14px 0px 12px;
+	}
+	.about-taskRabbit {
+		padding: 50px 0px 50px;
+	}
+	.rabbit-description h4 {
+		margin-bottom: 30px;
+		text-align: left;
+	}
+	.card-outer {
+		max-width: 100%;
+	}
+	.card-outer .card {
+		max-width: 47%;
+	}
+	.how-works{
+		flex-direction: row;
+	}
+	.your-need{
+		flex-direction: row;
+		width: 100%;
+	}
+	.need-card {
+		width: 33%;
+	}
+	.tasker-wrapper{
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		padding: 0px 25px 0px;
+		gap: 40px;
+	}
+	.tasker-detile h2{
+		text-align: left;
+		font-size: 33px;
+		margin-bottom: 15px;
+	}
+	.tasker-detile{
+		width: 70%;
+	}
+	.tasker-register{
+		width: 30%;
+	}
+	.tasker-detile p {
+		font-size: 15px;
+		margin-bottom: 12px;
+	}	
+	.tasker-register a{
+		font-size: 18px;
+		padding: 14px 32px 14px;
+	}
+	.slider-item {
+		flex-direction: row;
+		align-items: center;
+	}
+	.client-feedback p{
+		margin-bottom: 0px;
+	}
+	.client-feedback span {
+		font-size: 16px;
+		margin-bottom: 6px;
+	}
+	.client-feedback a {
+		font-size: 19px;
+	}
+	.customers-saying h3 {
+		margin-bottom: 5px;
+	}
+	.footer-wrapper {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	footer-links{
+		gap: 40px;
+	}
+	.scroll-section {
+		top: 10px;
+	}
+}
+@media ( min-width: 932px ){
+	
+	.about-taskRabbit .container{
+		max-width: 890px;
+		justify-content: space-between;
+		flex-direction: row;
+		width: 100%;
+		gap: 20px;
+		align-items: flex-start;
+	}
+	.contact-no{
+		gap: 20px;
+	}
+	nav ul a{
+		padding: 12px 16px;
+	}
+	.header-buttom{
+		padding: 25px 0px;
+	}
+	.banner {
+		padding: 80px 0px 80px;
+	}
+	.banner-text span {
+		font-size: 40px;
+	}
+	.banner h1 {
+		line-height: 1.5;
+		font-size: 38px;
+
+	}
+	.banner-inner {
+		width: 480px;
+	}
+	.banner p {
+		line-height: 1.6;
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+	.slider-wrapper .banner-inner .BannerbtnNext {
+		right: 10px;
+		top: 45%;
+		position: absolute;
+	}
+	.slider-wrapper .banner-inner .BannerbtnPrev {
+		position: absolute;
+		left: 10px;
+		top: 45%;
+	}
+	.card-wrape .card p {
+		width: 200px;
+	}
+	.rabbit-description {
+		width: 48%;
+		text-align: left;
+		margin-bottom: 0px;
+	}
+	.rabbit-description p {
+		font-size: 17px;
+		line-height: 25px;
+		margin-bottom: 10px;
+	}
+	
+	.rabbit-description h4 {
+		margin-bottom: 10px;
+	}
+	.card-wrape .card span{
+		margin: 10px 0px 10px;
+	}
+	.card-wrape {
+		flex-direction: row;
+		justify-content: space-between;
+		width:55%;
+	}
+	.about-taskRabbit {
+		padding: 75px 20px 75px;
+	}
+	.footer-links ul {
+		flex-direction: row;
+}
+.footer-links {
+    flex-direction: column;
+}
+}
+
+@media ( min-width: 1200px ){
+	.container{
+		max-width: 1050px;
+		
+}
+nav ul{
+	gap: 16px;
+}
+nav ul a {
+    padding: 14px 20px;
+}
+.soical-links {
+    gap: 35px;
+}
+.contact-no {
+    gap: 25px;
+}
+.contact-no a{
+	font-size: 16px;
+}
+.banner {
+    padding: 120px 0px 120px;
+}
+.banner h1 {
+    line-height: 1.3;
+    font-size: 50px;
+}
+.slider-wrapper .banner-inner .BannerbtnNext {
+	right: 10px;
+	top: 55%;
+	position: absolute;
+}
+.slider-wrapper .banner-inner .BannerbtnPrev {
+	position: absolute;
+	left: 10px;
+	top: 55%;
+}
+.about-taskRabbit .container {
+    max-width: 1050px;
+}
+.card-wrape .card p {
+    width: 250px;
+}
+.card-outer .card {
+    max-width: 31%;
+}
+}
+
+@media ( min-width: 1600px ){
+	.container{
+		max-width: 1140px;
+	}
+	nav ul {
+		gap: 10px;
+	}
+	.header-buttom {
+		padding: 30px 0px;
+	}
+	nav ul a {
+		padding: 16px 26px;
+		font-size: 18px;
+	}
+	.contact-no {
+		gap: 37px;
+	}
+	.soical-links {
+		gap: 40px;
+	}
+	.banner {
+		padding: 160px 0px 230px;
+	}
+	.banner-inner {
+		width: 675px;
+	}
+	.banner-text span {
+		font-size: 45px;
+	}
+	.banner a {
+	font-size: 26px;
+    padding: 16px 0px 19px;
+    width: 280px;
+	}
+	.slider-wrapper .banner-inner button {
+		width: 40px;
+		height: 40px;
+	}
+	.banner h1 {
+		line-height: 1.2;
+		font-size: 80px;
+	}
+	.slider-wrapper .banner-inner .BannerbtnNext {
+		right: 10px;
+		top: 70%;
+		position: absolute;
+	}
+	.slider-wrapper .banner-inner .BannerbtnPrev {
+		position: absolute;
+		left: 10px;
+		top: 70%;
+	}
+	.about-taskRabbit .container {
+		max-width: 1150px;
+		gap: 30px;
+	}
+	.card-wrape .card p {
+		width: 300px;
+	}
+	.card-wrape{
+		width: 56%;
+	}
+	.about-taskRabbit {
+		padding: 95px 0px 110px;
+	}
+	.rabbit-description h4 {
+		margin-bottom: 23px;
+		font-size: 45px;
+	}
+	.rabbit-description p {
+	    font-size: 20px;
+    line-height: 31px;
+
+	}
+	.card-wrape .card a {
+		width: 170px;
+		padding: 16px 0px 16px;
+	}
+	.about-taskRabbit .container{
+		align-items: flex-start;
+	}
+	.task-doing {
+		padding: 80px 0px 80px;
+	}
+	.task-flow h3 {
+		font-size: 40px;
+		margin-bottom: 50px;
+	}
+	.how-works{
+		margin-bottom: 30px;
+		padding-bottom: 40px;
+	}
+	.tasker-detile h2 {
+		font-size: 50px;
+		margin-bottom: 27px;
+	}
+	.tasker-detile p{
+		font-size: 25px;
+		margin-bottom: 28px;
+	}
+	.tasker-register a{
+		font-size: 28px;
+		padding: 15px 67px 15px;
+	}
+	.client-slider .client-btnPrev {
+		left: 275px;
+	}
+	.client-slider .client-btnNext {
+		right: 250px;
+	}
+	.customers-saying h3 {
+		font-size: 38px;
+		text-align: center;
+		line-height: 1.5;
+		margin-bottom: 13px;
+	}
+	.client-feedback p {
+		font-size: 23px;
+		margin-bottom: 20px;
+		text-align: left;
+	}
+	.client-feedback span{
+		font-size: 28px;
+	}
+	.client-feedback a {
+		font-size: 18px;
+	}
+}
